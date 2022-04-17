@@ -1,0 +1,111 @@
+#div1{
+    background-color: gray;
+    width: 30%;
+    float:right;
+    overflow: hidden;
+    height: 250px;
+}
+#div2{
+    background-color: gray;
+    width: 30%;
+    float:left;
+    height: 250px;
+    overflow: hidden;
+    
+    
+    
+}
+#div3{
+    background-color: gray;
+    width: 30%;
+    margin:0 auto ;
+    height: 250px;
+    overflow: hidden;
+    
+    
+}
+.navbar{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: space-between;
+    background-color: aquamarine;
+    padding: 15px;
+}
+.navbar a{
+    text-decoration: none;
+    color:inherit;
+
+}
+.logo{
+    margin-right:50px;
+
+}
+.list{
+    list-style:none;
+    display: flex;
+    gap:25px;
+}
+#toggler,
+.navbar label{
+    display:none;
+}
+@media screen  and (max-width:600px){
+    .menu{
+        width:100%;
+        max-height:0;
+        overflow:hidden;
+
+    }
+    .list{
+        flex-direction: column;
+        align-items:center;
+        padding:20px;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items:center;
+        cursor:pointer;
+
+    }
+   #toggler:checked ~ .menu{
+       max-height: 100%;
+   }
+   #div1{
+    width: 70%;
+    margin-right: 80px;
+    
+}
+#div2{
+    width: 70%;
+    margin: 20px;
+    margin-left: 90px;
+    margin-right: 500px;
+}
+#div3{
+    width:70%;
+    margin-left: 90px;
+    
+    
+}
+}
+@media(min-width:601px) and (max-width:991px) {
+    #div1{
+        width:45%;
+        height:200px;
+        margin: 10px;
+    }
+    #div2{
+        width:45%;
+        height:200px;
+        margin:10px;
+    }
+    #div3{
+        width:90%;
+        height:100px;
+        
+        background-color:gray;
+       
+        margin:0 auto;       
+    }
+}
